@@ -1,21 +1,18 @@
+- defaults:
+    link:
+        force: true
+
 - clean: ['~']
 
 
 - shell:
     "git submodule update --init --recursive": "Installing submodules"
-    
-- link:
-    ~/.profile: profile
-    ~/.bashrc: bashrc
-    ~/.bashenv: bashenv.sh
-    ~/.bash_logout: bash_logout
-    ~/.system: system
-    ~/.nvmrc: nvmrc
-    ~/.npmrc: npmrc
-- clean: ['~']
 
 - link:
+    ~/.nvmrc: .nvmrc
+    ~/.npmrc: .npmrc
     ~/.gitconfig: gitconfig
-    ~/.zshrc: zshrc
+    ~/.zshenv: .zshenv
+    ~/.zshrc: .zshrc
 
 

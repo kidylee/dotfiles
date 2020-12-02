@@ -1,3 +1,4 @@
+## NVM
 export NVM_NODEJS_ORG_MIRROR=http://mirrors.ustc.edu.cn/node/
 
 export NVM_DIR="$HOME/.nvm"
