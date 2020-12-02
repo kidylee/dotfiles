@@ -3,6 +3,11 @@
 - link:
     ~/.profile: profile
     ~/.bashrc: bashrc
+    ~/.bashenv: bashenv
     ~/.bash_logout: bash_logout
+    ~/.envs: envs
+    ~/.nvmrc: nvmrc
+    ~/.npmrc: npmrc
 
-
+- shell:
+    "git submodule update --init --recursive": "Installing submodules"
