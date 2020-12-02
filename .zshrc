@@ -100,3 +100,5 @@ source $ZSH/oh-my-zsh.sh
 
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
+alias dra="docker rm $(docker container ls -aq)"
