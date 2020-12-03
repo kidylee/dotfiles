@@ -14,4 +14,9 @@ git submodule update --init --recursive "${DOTBOT_DIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 
-[ ! -d "/home/$USER/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ] && git clone https://gitee.com/kidylee/zsh-autosuggestions.git "/home/$USER/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
+FOLDER="/home/$USER/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
+URL="https://gitee.com/kidylee/zsh-autosuggestions.git"
+
+if [ ! -d "$FOLDER" ] ; then
+    git clone "$URL" "$FOLDER"
+fi
