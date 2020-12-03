@@ -14,5 +14,6 @@
     ~/.gitconfig: gitconfig
     ~/.zshenv: .zshenv
     ~/.zshrc: .zshrc
+    ~/.system: system
 
 
