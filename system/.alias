@@ -1,4 +1,4 @@
-alias dra="docker rm $(docker container ls -aq)"
+# alias dra="docker rm $(docker container ls -aq)"
 
 alias ll="ls -lah"
 alias la="ls -A"
