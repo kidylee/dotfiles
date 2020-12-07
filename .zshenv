@@ -1,6 +1,5 @@
-. ~/.system/.nvm
-. ~/.system/.alias
-
-. ~/.system/.proxy
-
-export PATH=$PATH:~/bin
+for DOTFILE in `find ~/.system/`
+do
+  # echo $DOTFILE
+  [ -f “$DOTFILE” ] && source “$DOTFILE”
+done
