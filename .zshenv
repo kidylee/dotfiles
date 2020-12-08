@@ -1,5 +1,4 @@
 for DOTFILE in `find ~/.system/`
 do
-  # echo $DOTFILE
-  [ -f “$DOTFILE” ] && source “$DOTFILE”
+  [ ! -d “$DOTFILE” ] && source "$DOTFILE"
 done
