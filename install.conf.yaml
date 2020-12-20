@@ -15,5 +15,6 @@
     ~/.zshenv: .zshenv
     ~/.zshrc: .zshrc
     ~/.system: system
+    ~/.yarnrc: .yarnrc
 
 
