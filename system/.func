@@ -1,0 +1,13 @@
+
+# man() 
+# {
+#     man -t $1 | open -f -a /System/Application/Preview.app
+#     # if [ "$(uname)" == "Darwin" ]; then
+#     #     man -t $1 | open -f -a /System/Application/Preview.app
+#     # elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+#     #     man $@
+#     # fi
+# }
+pdfman(){
+    man -t "$1" | open -f -a /System/Applications/Preview.app
+}
