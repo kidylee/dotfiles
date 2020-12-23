@@ -1,2 +1,14 @@
-alias proxy="export http_proxy=http://127.0.0.1:10809; export https_proxy=http://127.0.0.1:10809"
+set_proxy () {
+    local hostip=$(cat /etc/resolv.conf |grep -oP '(?<=nameserver\ ).*')
+    echo "http://${hostip}:10809/"
+}
+
+
+alias proxy="export http_proxy=$(set_proxy); export https_proxy=$(set_proxy)"
 alias unproxy="unset http_proxy;unset https_proxy"
+
+# proxy () {
+#     local hostip=$(cat /etc/resolv.conf |grep -oP '(?<=nameserver\ ).*')
+#     echo $hostip
+# }
+
