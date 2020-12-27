@@ -100,4 +100,5 @@ source $ZSH/oh-my-zsh.sh
 
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_USE_ASYNC=1
 
